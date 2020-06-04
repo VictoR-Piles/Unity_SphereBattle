@@ -703,6 +703,11 @@ PrefabInstance:
       propertyPath: powerUpIndicator
       value: 
       objectReference: {fileID: 479152361}
+    - target: {fileID: 7004637584599633532, guid: 1b599b9e4ad458f43a3b70db882ff2dc,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b599b9e4ad458f43a3b70db882ff2dc, type: 3}
 --- !u!1001 &7305732181041295649
