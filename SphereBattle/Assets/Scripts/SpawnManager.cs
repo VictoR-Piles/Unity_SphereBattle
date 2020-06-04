@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
 	public GameObject enemyPrefab;
+	public GameObject powerUp;
 	public float spawnRange = 9f;
 
 	private int enemyCount;
@@ -12,6 +13,7 @@ public class SpawnManager : MonoBehaviour
 	
 	void Start()
 	{
+		Instantiate(powerUp, GetRandomSpawnPos(), powerUp.transform.rotation);
 		SpawnEnemyWave(waveNum);
 	}
 
@@ -22,6 +24,7 @@ public class SpawnManager : MonoBehaviour
 		if (enemyCount == 0)
 		{
 			waveNum++;
+			Instantiate(powerUp, GetRandomSpawnPos(), powerUp.transform.rotation);
 			SpawnEnemyWave(waveNum);
 		}
 	}

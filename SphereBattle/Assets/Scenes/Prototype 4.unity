@@ -195,6 +195,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fd5555088952419ebf0eb82e9096fa5, type: 3}
+--- !u!1 &479152361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7122741398630449814, guid: 4011250b24987c44db5d256c427732e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 632299622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &528234099
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +246,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 50
+--- !u!1001 &632299622
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7120334675866433786, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120334675866433786, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120334675866433786, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120334675866433786, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120334675866433786, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120334675866433786, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120334675866433786, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120334675866433786, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120334675866433786, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120334675866433786, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120334675866433786, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122741398630449814, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_Name
+      value: PowerUpIndicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122741398630449814, guid: 4011250b24987c44db5d256c427732e6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4011250b24987c44db5d256c427732e6, type: 3}
 --- !u!1 &1211016355
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 7992205783928286941, guid: 797c95eda809dff4e91c99afd68a7816,
     type: 3}
+  powerUp: {fileID: 4634704807901489820, guid: 23e41074084962e45be7221da0b771a7, type: 3}
   spawnRange: 9
 --- !u!4 &1492330509
 Transform:
@@ -617,6 +698,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7004637584599633532, guid: 1b599b9e4ad458f43a3b70db882ff2dc,
+        type: 3}
+      propertyPath: powerUpIndicator
+      value: 
+      objectReference: {fileID: 479152361}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b599b9e4ad458f43a3b70db882ff2dc, type: 3}
 --- !u!1001 &7305732181041295649
