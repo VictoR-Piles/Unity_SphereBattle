@@ -7,9 +7,31 @@ public class SpawnManager : MonoBehaviour
 	public GameObject enemyPrefab;
 	public float spawnRange = 9f;
 
+	private int enemyCount;
+	private int waveNum = 1;
+	
 	void Start()
 	{
-		Instantiate(enemyPrefab, GetRandomSpawnPos(), enemyPrefab.transform.rotation);
+		SpawnEnemyWave(waveNum);
+	}
+
+	void Update()
+	{
+		enemyCount = FindObjectsOfType<EnemyController>().Length;
+
+		if (enemyCount == 0)
+		{
+			waveNum++;
+			SpawnEnemyWave(waveNum);
+		}
+	}
+
+	void SpawnEnemyWave(int enemiesToSpawn)
+	{
+		for (int i = 0; i < enemiesToSpawn; i++)
+		{
+			Instantiate(enemyPrefab, GetRandomSpawnPos(), enemyPrefab.transform.rotation);
+		}
 	}
 
 	private Vector3 GetRandomSpawnPos()
