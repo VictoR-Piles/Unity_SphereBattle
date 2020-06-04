@@ -3,6 +3,7 @@
 public class RotateCamera : MonoBehaviour
 {
 	public float rotationSpeed = 50f;
+
 	void Start()
 	{
 	}
