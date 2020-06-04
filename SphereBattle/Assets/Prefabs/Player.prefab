@@ -123,4 +123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09b1ff5571e667c43a44870e232e3f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerUpIndicator: {fileID: 7122741398630449814, guid: 4011250b24987c44db5d256c427732e6,
+    type: 3}
   speed: 5
+  powerUpImpulseStrenght: 15
+  powerUpCountdownDuration: 7

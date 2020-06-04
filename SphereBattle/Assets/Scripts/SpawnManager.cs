@@ -12,10 +12,6 @@ public class SpawnManager : MonoBehaviour
 		Instantiate(enemyPrefab, GetRandomSpawnPos(), enemyPrefab.transform.rotation);
 	}
 
-	void Update()
-	{
-	}
-
 	private Vector3 GetRandomSpawnPos()
 	{
 		float spawnPosX = Random.Range(-spawnRange, spawnRange);

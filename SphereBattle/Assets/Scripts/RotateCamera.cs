@@ -4,10 +4,6 @@ public class RotateCamera : MonoBehaviour
 {
 	public float rotationSpeed = 50f;
 
-	void Start()
-	{
-	}
-
 	void Update()
 	{
 		float horizontalInput = Input.GetAxis("Horizontal");
